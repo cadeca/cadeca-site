@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "cadeca-site"
+  "defaultProject": "cadeca-site",
+  "cli": {
+    "analytics": "1022d44e-4d07-4129-a037-30e71147c9f1"
+  }
 }
