@@ -31,7 +31,7 @@ jobs:
           npm i
           npm run build
       - name: write CNAME file
-        run: echo ${{ secrets.CADECA_DOMAIN }} >> dist/cadeca-site/CNAME
+        run: echo "${{ secrets.CADECA_DOMAIN }}" >> dist/cadeca-site/CNAME
       - name: Pushes to another repository
         uses: cpina/github-action-push-to-another-repository@master
         env:
