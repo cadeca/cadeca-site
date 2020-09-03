@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [ 12.x ]
 
     steps:
       - uses: actions/checkout@v1
@@ -31,11 +31,11 @@ jobs:
           npm i
           npm run build
       - name: Pushes to another repository
-          uses: cpina/github-action-push-to-another-repository@master
-          env:
-            API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
-          with:
-            source-directory: 'dist/cadeca-site'
-            destination-github-username: 'cadeca'
-            destination-repository-name: 'cadeca.github.io'
-            user-email: cadeca.software@gmail.com
+        uses: cpina/github-action-push-to-another-repository@master
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: 'dist/cadeca-site'
+          destination-github-username: 'cadeca'
+          destination-repository-name: 'cadeca.github.io'
+          user-email: cadeca.software@gmail.com
