@@ -7,12 +7,13 @@
   .logo-container {
     width: 50%;
     height: 80%;
+    animation:         grow-visible 5s;
+    padding-left: 4rem;
+    box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.16);
 
     img {
       width: 100%;
-      height: auto;
-      box-shadow: 0px 0px 20px 20px rgba(0, 0, 0, 0.16);
-      animation:         grow-visible 5s;
+      height: 100%;
     }
   }
 }
