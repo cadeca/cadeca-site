@@ -8,7 +8,7 @@ const routes: Routes = [
   { path: 'landing', component: LandingPageComponent },
   { path: 'about', component: AboutPageComponent },
   { path: 'contact', component: ContactPageComponent },
-  { path: '',   redirectTo: '/landingt', pathMatch: 'full' },
+  { path: '',   redirectTo: '/landing', pathMatch: 'full' },
   {
     path: '**', redirectTo: '/landing'
   }
