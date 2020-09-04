@@ -1,8 +1,4 @@
 .landing-page {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
   .logo-container {
     width: 50%;
@@ -16,7 +12,20 @@
       height: 100%;
     }
   }
+  .landing-page-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    //left: 0;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background-color:  #f2f2f2;
+  }
+
 }
+
 @keyframes grow-visible {
   from   { opacity: 0;  }
   to { opacity: 1;}
